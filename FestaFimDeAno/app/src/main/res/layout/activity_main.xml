@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/planofundo"
+    android:padding="8dp"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/textToday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="01/01/2020!"
+        android:textSize="26sp" />
+
+    <View
+        android:id="@+id/linha"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textToday"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/Text_Label_day_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linha"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:text="Dias Restante para o fim do ano!"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_day_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Text_Label_day_left"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="365 dias"
+        android:textColor="@color/colorAccent"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"
+        android:padding="24dp"
+        android:text="SIM/NÃO/NÃO CONFIRMADO"
+        android:textColor="#FFFFFF"
+
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
